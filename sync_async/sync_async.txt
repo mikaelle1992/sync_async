@@ -1,0 +1,12 @@
+﻿Comunicação síncrona e assíncrona.
+
+
+Síncrona.
+A comunicação síncrona tem o emissor e receptor onde o bloco de informações tem que ser enviados e recebidos de forma sincronizada.
+Quando o bloco de informações é enviado só pode enviar outro bloco aṕos o recebimento do primeiro havendo uma sincronia e execução na ordem seguindo uma fila.
+Em um código síncrono a execução é feita linha por linha, esse execução tem que ser concluída com sucesso para seguir para próxima 
+
+
+Assíncrona.
+ Na comunicação assíncrona o emissor envia o bloco de informações constantemente, não são executadas em ordem e não esperam pelo recebimento de um envio antes de responder com outra. Assim, um processo inicia mesmo que outro esteja sendo executado.
+Um código assíncrono continua executando uma tarefa por vez , ele só não fica preso  esperando a resposta, enquanto isso inicia outros trabalhos e volta quando a resposta estiver pronto.
