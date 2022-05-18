@@ -1,0 +1,5 @@
+﻿Threads
+Threads são uma das formas de conseguir uma execução simultânea de várias tarefas utilizando apenas um processador, sem depender do resultado de outras.
+Todas as tarefas são executadas simultaneamente num dado intervalo de tempo,garantindo que todas sejam executadas. A execução das tarefas é uma por vez, mas em um tempo especificado.  No processo de uma tarefa se está demorando muito, o sistema para a sua execução e passa o comando para a próxima tarefa da fila. Quando esta última tarefa estiver pronta, o comando passa para a próxima, assim o processo não fica parado.
+Em uma aplicação as Threads são uma forma de fazer com que as tarefas sejam executadas assíncrona, usando a função sleep.
+o sleep permite pausar a execução da thread durante um determinado número de milissegundos, assim a tarefa seja executada após o tempo determinado.
