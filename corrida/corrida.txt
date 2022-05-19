@@ -1,0 +1,7 @@
+﻿condição de corrida:
+
+
+A condição de corrida ocorre quando dois threads acessam uma variável compartilhada ao mesmo tempo.
+O primeiro thread lê a variável e o segundo lê o mesmo valor da variável. Em seguida, o primeiro thread e o segundo thread executam suas operações no valor e eles correm para ver qual thread vai gravar o valor por último na variável usada. 
+Isso não quer dizer que sempre vai acontecer, é um erro aleatório, a thread pode terminar a sua execução antes que a thread seguinte possa iniciar a sua execução.
+Para que esse erro não aconteça  a variáveis compartilhadas podem ser bloqueadas, para que apenas uma thread por vez tenha acesso, mas com cuidado pois se a variável estiver bloqueada no primeiro thread e o seguinte também precisa da variável, e a execução será interrompida.
