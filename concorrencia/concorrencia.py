@@ -1,24 +1,24 @@
 import _thread
 import time
 
-num_thread = 1
-thread_started = False
+finalizar_tarefa = 0
+tarefa_iniciada = False
 
-def task(task_name, delay):
-	global num_thread, thread_started
-	thread_started = True
-	num_thread += 1
+def task(nome_tarefa, atraso):
+	global finalizar_tarefa, tarefa_iniciada
+	tarefa_iniciada = True
+	finalizar_tarefa += 1
 	cont = 0
 	for cont in range(5):
-		time.sleep(delay)
-		print("Thread : %s" % (task_name))
+		time.sleep(atraso)
+		print("Thread : %s" % (nome_tarefa))
 		cont += 1
-	num_thread -= 1
+	finalizar_tarefa -= 1
 
 _thread.start_new_thread(task, ("Tarefa 1", 2))
 _thread.start_new_thread(task, ("Tarefa 2", 4))
 
-while not thread_started:
+while not tarefa_iniciada:
 	pass
-while num_thread > 0:
+while finalizar_tarefa > 0:
 	pass
