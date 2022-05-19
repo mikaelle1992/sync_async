@@ -1,0 +1,3 @@
+﻿Concorrência:
+Quando duas ou mais tarefas começam a ser executadas e terminam no mesmo espaço de tempo. Uma tarefa é executada em um mesmo intervalo de tempo, não esperando que uma tarefa termine por completo antes de dar inicio na outra.
+Na concorrência uma tarefa em execução está demorando de retornar ela dá uma pausa e outra tarefa é executada. Por exemplo, a tarefa "arquivos _do_ escritório" está sendo executada , e temos a tarefa "arquivos _do_ pessoais", em um programa utilizando a concorrência enquanto a tarefa  “arquivos _do_ escritório” estiver sendo executada ela alterna a execução com a tarefa  "arquivos _do_ pessoais" assim duas ou mais tarefas conseguem ser realizadas.
